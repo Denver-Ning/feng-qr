@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二维码列表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            padding: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .qr-list {
+            list-style: none;
+        }
+
+        .qr-item {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .qr-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .qr-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+        }
+
+        .qr-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .qr-image {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .qr-desc {
+            font-size: 14px;
+            color: #666;
+            margin-top: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="qr-list">
+            <!-- 小红书 -->
+            <li class="qr-item">
+                <div class="qr-header">
+                    <img src="./images/page1.png" alt="小红书" class="qr-icon">
+                    <span class="qr-title">小红书</span>
+                </div>
+                <img src="./images/page1.png" alt="小红书二维码" class="qr-image">
+                <p class="qr-desc">扫码关注我的小红书账号</p>
+            </li>
+
+            <!-- 支付宝 -->
+            <li class="qr-item">
+                <div class="qr-header">
+                    <img src="./images/page1.png" alt="支付宝" class="qr-icon">
+                    <span class="qr-title">支付宝收款码</span>
+                </div>
+                <img src="./images/page1.png" alt="支付宝二维码" class="qr-image">
+                <p class="qr-desc">扫码向我付款</p>
+            </li>
+
+            <!-- 微信 -->
+            <li class="qr-item">
+                <div class="qr-header">
+                    <img src="./images/page1.png" alt="微信" class="qr-icon">
+                    <span class="qr-title">微信</span>
+                </div>
+                <img src="./images/page1.png" alt="微信二维码" class="qr-image">
+                <p class="qr-desc">扫码添加我的微信</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
